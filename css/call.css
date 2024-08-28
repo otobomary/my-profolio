@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:'Courier New', Courier, monospace;
+    background: url(/images/scen.png);
+    text-decoration: none;
+    color:white;
+    backdrop-filter: blur(10px);
+    height:100vh;
+}
+.parentcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:4rem;
+}
+.parentcon h2{
+    text-decoration: none;
+    color:rgb(230, 230, 157)
+}
+.skills{
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+}
+.skill{
+    display: grid;
+    grid-template-columns:repeat(3,2fr);
+}
+.skill p{
+    margin:1rem;
+
+}
+.hob p{
+    margin:1rem;
+    font-size: x-large;
+}
+.contact div{
+    display: flex;
+    flex-direction: column;
+    background-color:grey;
+    width:450px;
+    height:400px;
+    
+}  
+.contact h1{
+    text-align: center;
+    margin:1rem;
+    text-decoration: none;
+    color:rgb(230, 230, 157)
+
+}
+.contact input{
+    cursor: pointer;
+    margin:1rem;
+    padding:1rem;
+}
+#meg{
+    padding:4rem;
+}
+.contact button{
+    margin:5px;
+    align-self: flex-end;
+    padding:10px 20px;
+    background-color: yellow;   
+    text-decoration: none;   
+    color:black;   
+    border-radius: 5px; 
+    cursor: pointer;          
+}
+@media screen and (max-width: 768px){
+    body{
+        height:100vh;
+        width:100%;
+    
+    }
+    .parentcon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills{
+        justify-content: center;
+        align-items: center;
+        width:300px;
+    }
+    .skill{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        font-size: small;
+    }
+    .parentcon h2{
+        text-align:center;
+        font-size: x-large;
+    }
+    .hobs p{
+        font-size: medium;
+        margin-left: 2rem;
+    }
+    .contact div{
+        width: 280px;
+    }
+
+    
+
+
+
+}
+    

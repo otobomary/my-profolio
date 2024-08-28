@@ -1,0 +1,106 @@
+body{
+    background-image: url(../images/scen.png);
+    text-decoration: none;
+    backdrop-filter:blur(10px);
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+}
+body h2{
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration:line-through;
+    
+}
+#parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+#parent div{
+    display: flex;
+    flex-direction: column;
+}
+.backg div{
+    margin:1rem;
+    border: 1px solid rgb(147, 147, 99);
+    padding:2rem;
+    font-size: larger;
+    width:500px;
+    text-align: right;
+    animation: tams 10s infinite;
+    cursor: pointer;
+}
+.backg div:hover{
+    opacity: 0.9;
+    color:rgb(210, 156, 85);
+    border-color: red;
+
+}
+.tams{
+    transform: translateX(40rem);
+    text-align: start;
+    width:400px;
+    animation: s 10s infinite;
+
+}
+@keyframes tams{
+    0%{
+        top: 0;
+        transform: translateX(-100%);
+    }
+}
+.tims{
+    transform: translateX(40rem);
+    text-align: start;  
+      animation: tims 10s infinite;
+}
+@keyframes tams{
+    50%{
+        top: 0;
+        transform: translateX(50%);
+    }
+}
+#worked{
+    margin-right:20rem;
+}
+#modalparent{
+    display: none;
+    margin-top: -15rem;
+}
+
+.modal{
+    width: 100%;
+    height:1250px;
+    background: rgba(0, 0, 0,0.8);
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#modalbox{
+    border:3px solid rgb(194, 134, 24);
+    width:600px;
+    padding:15px;
+    justify-content: center;
+    text-align: center;
+    font-family:fantasy;
+    font-size: larger;
+    height:150px;
+    cursor: pointer;
+}
+#close{
+    display: flex;
+    margin: 0rem 1rem 18rem 1rem;
+    position: relative;
+    cursor: pointer;
+}
+.sidebar.active{
+    display: flex;
+    
+}
+

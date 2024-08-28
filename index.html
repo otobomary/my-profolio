@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shan' profolio</title>
+    <link rel="stylesheet" href="./css/pro.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,
+400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="name">
+   <h2>Shan Codes</h2> 
+   <img id="menubar" onclick="togglesiderbar()" src="./images/menu.svg"/>
+    <div class="side1" id="dropdown1">
+      <div>
+    <img src="./images/home.svg"/>
+    <a href="http://127.0.0.1:5500/index.html">Home</a>
+    </div>
+    <div>
+    <img src="./images/call.svg"/>
+    <a href="http://127.0.0.1:5500/call.html">Call</a>
+    </div>
+    <div>
+    <img src="./images/key.svg"/>
+    <a href="http://127.0.0.1:5500/aboutme.html">About Me</a>
+    </div>
+    </div>
+  </div>
+
+  <div class="intro">
+  <img src="./images/pro.jpg"/>
+  <div class="text">
+  <h2>Hello, I am Otobo E Mary</h2>
+  <p>"Codes, Curves, and Cutting-edge Designs"
+    "Frontend Fabulous: Beauty meets ..........."
+  </p>
+  </div>
+  </div>
+
+  <div class="icons">
+    <img src="./images/html5-brands-solid.svg"/>
+    <img src="./images/css3-brands-solid.svg"/>
+    <img src="./images/code-solid.svg"/>
+    <img src="./images/js-brands-solid.svg"/>
+    <img src="./images/react-brands-solid.svg"/>
+  </div>
+
+  <div class="last">
+  <p>Created by Shancodes</p>
+  <a href=""><img src="./images/mail.svg">Otoboshanti@gmail.com</a>
+  </div>
+  <script>
+    function togglesiderbar(){
+      const dropdown1 =document.getElementById("dropdown1");
+      dropdown1.classList.toggle('active');
+
+    }
+  </script>
+  
+</body>
+</html>

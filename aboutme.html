@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shan' profolio</title>
+    <link rel="stylesheet" href="./css/aboutme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,
+400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h2>My Background</h2>
+    <div id="parent">
+      <div class="backg">
+        <h2>Education</h2>
+        <div id="ssce">
+          <p>livingstars International Academy</p>
+          <span>SSCE</span>
+          <span>Warri,Delta State</span>
+          <span>2015</span>
+        </div>
+        <div class="tams" id="tams">
+          <p>Tams Exclusive Companies</p>
+          <span>Sales Representive</span>
+          <span>Warri,Delta State</span>
+        </div>
+
+        <div id="ambrose">
+          <p>Ambrose Alli University</p>
+          <span>Department of Business Administration (BSC)</span>
+          <span>Ekpoma,Edo State</span>
+          <span>2018-2023</span>
+        </div>
+        <div class="tims" id="tims">
+          <p>Timtim Resturant</p>
+          <span>A Cook</span>
+          <span>Lugbe,Abuja</span>
+        </div>
+        <div id="marolt">
+          <p>Marolt TECH Agency</p>
+          <span>Web Designing</span>
+          <span>Effurun,Delta State</span>
+          <span>2024</span>
+        </div>
+      </div>
+      <div id="worked">
+        <h2>Jobs</h2>
+      </div>
+    </div>
+
+    <div id="modalparent">
+    <div class="modal">
+      <img src="./close.svg" id="close"/>
+      <div id="modalbox"></div>
+    </div>
+    </div>
+
+
+    <script>
+      const ssce = document.getElementById("ssce");
+      const tams = document.getElementById("tams");
+      const ambrose = document.getElementById("ambrose");
+      const tims = document.getElementById("tims");
+      const marolt = document.getElementById("marolt");
+      const modalbox = document.getElementById("modalbox");
+      const modalparent = document.getElementById("modalparent");
+      const closebtn = document.getElementById('close')
+
+
+      ssces = ssce.innerHTML;
+      tamss = tams.innerHTML;
+      ambroses = ambrose.innerHTML;
+      timss = tims.innerHTML;
+      marolts = marolt.innerHTML;
+    
+  
+      
+
+
+      ssce.addEventListener("mouseover", () => {
+        modalparent.style.display = "block";
+        modalbox.innerHTML = ssces;
+      });
+
+      tams.addEventListener("mouseover", () => {    
+        modalparent.style.display = "block";
+        modalbox.innerHTML = tamss;
+      });
+
+      ambrose.addEventListener("mouseover", () => {
+        modalparent.style.display = "block";
+        modalbox.innerHTML = ambroses;
+      });
+
+      tims.addEventListener("mouseover", () =>{
+        modalparent.style.display = "block";
+        modalbox.innerHTML = timss;
+       });
+
+       marolt.addEventListener("mouseover", () =>{
+        modalparent.style.display = "block";
+        modalbox.innerHTML = marolts;
+        });
+
+        closebtn.addEventListener('click', () => {
+          modalparent.style.display = 'none';
+        })
+
+        
+      
+
+
+    
+    </script>
+  </body>
+</html>
